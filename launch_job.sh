@@ -4,4 +4,4 @@
 nodes=${1:-'2'}
 
 SCENV=ava rsc_launcher launch --projects airstore_no_user_data_avatar_imagenet --end-script \
-  'source /uca/conda-envs/activate-latest && cd /home/$USER/rsc/rsc-examples/imagenet && sbatch --nodes='"$nodes"' slurm.sh'
+  'source /uca/conda-envs/activate-latest && cd /home/$USER/nccl-error && sbatch --nodes='"$nodes"' slurm.sh'
