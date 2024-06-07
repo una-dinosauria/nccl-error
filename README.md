@@ -4,14 +4,12 @@ on your dev machine
 ```bash
 # Clone to RSC, get my branch
 cd ~
-git clone git@ghe.oculus-rep.com:julietamartinez/rsc-examples.git
-cd rsc-examples
-git checkout julieta/min_nccl_repro
+git clone git@github.com:una-dinosauria/nccl-error.git
+cd nccl-error
 ```
 
 Launch the job
 ```bash
-cd imagenet
 ./launch_job.sh 1
 ```
 
