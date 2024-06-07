@@ -10,7 +10,6 @@
 #SBATCH --gpus-per-task=1
 #SBATCH --output=/home/%u/rsc/rsc-examples/imagenet/slurm-%j.out
 #SBATCH --error=/home/%u/rsc/rsc-examples/imagenet/slurm-%j.err
-#SBATCH --qos=urgent_deadline
 
 export MASTER_ADDR=$(scontrol show hostnames "$SLURM_JOB_NODELIST" | head -n 1)
 export MASTER_PORT=$(expr 10000 + $(echo -n $SLURM_JOBID | tail -c 4))
